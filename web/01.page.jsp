@@ -12,8 +12,12 @@
 </head>
 <body>
 <%
-    String name = null;
-    name.charAt(0);
+    //String name = null;
+    //name.charAt(0);
+    int i = 100/0;
+
+    HttpSession session1 = request.getSession();
+    //session.getId();
 %>
 </body>
 </html>
