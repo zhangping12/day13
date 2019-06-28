@@ -8,9 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>动作标签</title>
 </head>
 <body>
-
+<%=request.getParameter("name")%><br/>
+<%=request.getParameter("password")%>
 </body>
 </html>

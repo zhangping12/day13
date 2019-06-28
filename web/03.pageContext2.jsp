@@ -8,9 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>从四个域中获取数据</title>
 </head>
 <body>
-
+page域：<%=pageContext.getAttribute("message",PageContext.PAGE_SCOPE) %><br/>
+request域： <%=pageContext.getAttribute("message",PageContext.REQUEST_SCOPE) %><br/>
+session域： <%=pageContext.getAttribute("message",PageContext.SESSION_SCOPE) %><br/>
+context域：<%=pageContext.getAttribute("message",PageContext.APPLICATION_SCOPE) %><br/>
 </body>
 </html>
